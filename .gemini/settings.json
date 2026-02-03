@@ -1,0 +1,15 @@
+{
+  "hooksConfig": {
+    "disabled": [
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener",
+      "custom-listener"
+    ]
+  }
+}
