@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Foundation Models in 2026: A Data Snapshot — Nanda Krishnan</title>
+    <link rel="stylesheet" href="../styles/site.css" />
+  </head>
+  <body>
+    <nav class="topnav"><div class="container"><div class="brand">Nanda Krishnan</div><div class="links"><a href="../index.html">Home</a><a href="../profile.html">Profile</a><a href="../blog.html">Blog</a><a href="../works.html">Works</a></div></div></nav>
+    <main class="page container">
+      <p class="kicker">Blog · Indian AI</p>
+      <h1>Indian Foundation Models in 2026: A Data Snapshot</h1>
+
+      <section class="card" style="margin-top:18px;">
+        <p><strong>Scope:</strong> This is a benchmark-first snapshot focused on Sarvam-30B and Sarvam-105B using publicly reported numbers from model cards and public leaderboards.</p>
+
+        <h2>1) Model release context</h2>
+        <ul>
+          <li><strong>Sarvam-30B</strong> (MoE): released on Hugging Face, 2026-03-03.</li>
+          <li><strong>Sarvam-105B</strong> (MoE): released on Hugging Face, 2026-03-03.</li>
+          <li>Both are positioned for multilingual Indian usage (22 Indian languages listed in model cards).</li>
+        </ul>
+
+        <h2>2) Reported benchmark results (source-published)</h2>
+        <div style="overflow:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">Benchmark</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">Sarvam-30B</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">Sarvam-105B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">LiveCodeBench v6</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">70.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">71.7</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">SWE-bench Verified</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">34.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">45.0</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">τ² Bench (avg.)</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">45.7</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">68.3</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">BrowseComp</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">35.5</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">49.5</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">MMLU</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">85.1</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">90.6</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">MMLU-Pro</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">80.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">81.7</td></tr>
+              <tr><td style="padding:8px;">GPQA Diamond</td><td style="padding:8px;">66.5</td><td style="padding:8px;">78.7</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3) 30B-class comparison (open models, source table)</h2>
+        <p>From the Sarvam-30B model card comparison table:</p>
+        <div style="overflow:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">Model (~30B class)</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">LiveCodeBench v6</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">SWE-bench Verified</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">GPQA Diamond</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">Sarvam-30B</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">70.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">34.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">66.5</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">Nemotron-3-Nano-30B</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">68.3</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">38.8</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">73.0</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">Qwen3-30B-Thinking-2507</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">66.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">22.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">73.4</td></tr>
+              <tr><td style="padding:8px;">GPT-OSS-20B</td><td style="padding:8px;">61.0</td><td style="padding:8px;">34.0</td><td style="padding:8px;">71.5</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>4) 105B-class comparison (open models, source table)</h2>
+        <p>From the Sarvam-105B model card comparison table (includes GLM-4.5-Air):</p>
+        <div style="overflow:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">Model (~80B–120B class)</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">LiveCodeBench v6</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">SWE-bench Verified</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">GPQA Diamond</th>
+                <th style="text-align:left; border-bottom:1px solid #dbe4f0; padding:8px;">τ² Bench</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">Sarvam-105B</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">71.7</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">45.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">78.7</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">68.3</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">GLM-4.5-Air</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">59.5</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">57.6</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">75.0</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">53.2</td></tr>
+              <tr><td style="padding:8px; border-bottom:1px solid #eef2f7;">GPT-OSS-120B</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">72.3</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">50.6</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">80.1</td><td style="padding:8px; border-bottom:1px solid #eef2f7;">65.8</td></tr>
+              <tr><td style="padding:8px;">Qwen3-Next-80B-A3B-Thinking</td><td style="padding:8px;">68.7</td><td style="padding:8px;">60.9</td><td style="padding:8px;">77.2</td><td style="padding:8px;">55.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>5) What the numbers say</h2>
+        <ul>
+          <li><strong>Scale-up gain is clear:</strong> 105B improves strongly over 30B on agentic evaluations.</li>
+          <li><strong>GLM-4.5-Air context:</strong> Sarvam-105B is ahead on LiveCodeBench and τ² Bench in the source table, while GLM-4.5-Air is ahead on SWE-bench Verified.</li>
+          <li><strong>Open-model band is tight:</strong> GPT-OSS-120B, Qwen3-Next-80B, GLM-4.5-Air, and Sarvam-105B trade wins across benchmarks.</li>
+        </ul>
+
+        <h2>6) Positioning vs broader frontier landscape</h2>
+        <p>On broad global aggregate leaderboards (e.g., Artificial Analysis), the current top cluster includes newer GPT-5.x, Gemini 3.1, and Claude 4.6-class systems. Sarvam’s strength is not “global #1 everywhere”; it is the combination of strong open-model capability plus India-focused multilingual alignment.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://huggingface.co/sarvamai/sarvam-30b" target="_blank">Sarvam-30B model card</a></li>
+          <li><a href="https://huggingface.co/sarvamai/sarvam-105b" target="_blank">Sarvam-105B model card</a></li>
+          <li><a href="https://www.sarvam.ai/blogs/sarvam-30b-105b" target="_blank">Sarvam launch blog</a></li>
+          <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank">Artificial Analysis model leaderboard</a></li>
+        </ul>
+      </section>
+
+      <footer>Published by Nanda Krishnan · data-oriented snapshot from public sources.</footer>
+    </main>
+  </body>
+</html>

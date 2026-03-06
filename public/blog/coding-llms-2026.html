@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current best coding LLMs — Nanda Krishnan</title>
+    <link rel="stylesheet" href="../styles/site.css" />
+  </head>
+  <body>
+    <nav class="topnav"><div class="container"><div class="brand">Nanda Krishnan</div><div class="links"><a href="../index.html">Home</a><a href="../profile.html">Profile</a><a href="../blog.html">Blog</a><a href="../works.html">Works</a></div></div></nav>
+    <main class="page container">
+      <p class="kicker">Blog · AI Engineering</p>
+      <h1>Current best coding LLMs: coding + agentic benchmarks</h1>
+      <section class="card" style="margin-top:18px;">
+        <p><strong>TL;DR:</strong> one-shot code benchmarks are no longer enough. The practical winners in 2026 are models that can plan, edit, run tools/tests, recover, and finish tasks end-to-end.</p>
+
+        <h2>What benchmarks matter most now</h2>
+        <ul>
+          <li><strong>SWE-bench Verified:</strong> closest proxy for real software issue resolution in repositories.</li>
+          <li><strong>LiveCodeBench:</strong> useful for competitive coding freshness and contamination resistance.</li>
+          <li><strong>Aider polyglot:</strong> practical signal for coding assistant workflows (especially diff-format editing reliability).</li>
+        </ul>
+
+        <h2>Snapshot numbers worth tracking</h2>
+        <p>From current public model/vendor pages and live leaderboards:</p>
+        <ul>
+          <li><strong>Artificial Analysis highlights (latest snapshot):</strong> top intelligence cluster includes Gemini 3.1 Pro Preview, GPT-5.4 (xhigh), GPT-5.3 Codex (xhigh), Claude Opus 4.6.</li>
+          <li><strong>Aider polyglot coding leaderboard:</strong> latest top entries include GPT-5 (high) at 88.0%, GPT-5 (medium) 86.7%, o3-pro (high) 84.9%, Gemini 2.5 Pro preview variants in the low-80s.</li>
+          <li><strong>SWE-bench examples from vendor disclosures:</strong> GPT-4.1 reported at 54.6% (OpenAI setup); Claude 3.7 Sonnet reported 63.7% pass@1 on Anthropic subset with higher-compute scaffold reaching 70.3% on that subset.</li>
+        </ul>
+
+        <h2>Practical model tiers (for builders)</h2>
+        <ul>
+          <li><strong>Frontier closed models:</strong> usually strongest on long-horizon agentic tasks and debugging loops.</li>
+          <li><strong>Strong open models:</strong> increasingly competitive for cost/perf, especially with good scaffolding.</li>
+          <li><strong>Small/fast models:</strong> ideal for autocomplete, lightweight refactors, and high-throughput tasks.</li>
+        </ul>
+
+        <h2>How to choose for production</h2>
+        <p>Use a two-model strategy:</p>
+        <ul>
+          <li><strong>Primary model</strong> for hard bugfixes and multi-file changes.</li>
+          <li><strong>Fast model</strong> for quick edits and tight inner loops.</li>
+        </ul>
+        <p>Then track your own pass-rate on real repo tasks. Global leaderboards are directional; your codebase is the truth.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://openai.com/index/gpt-4-1/" target="_blank">OpenAI: GPT-4.1 launch/evals</a></li>
+          <li><a href="https://www.anthropic.com/news/claude-3-7-sonnet" target="_blank">Anthropic: Claude 3.7 Sonnet + appendix</a></li>
+          <li><a href="https://aider.chat/docs/leaderboards/" target="_blank">Aider LLM Leaderboards</a></li>
+          <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank">Artificial Analysis LLM Leaderboard</a></li>
+          <li><a href="https://www.swebench.com" target="_blank">SWE-bench</a></li>
+        </ul>
+      </section>
+      <footer>Published by Nanda Krishnan · Data snapshot as available on public pages at write time.</footer>
+    </main>
+  </body>
+</html>
